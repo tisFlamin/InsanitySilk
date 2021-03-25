@@ -1,0 +1,9 @@
+name: InsanitySilk
+version: ${project.version}
+main: me.insanitycraft.silkkits.insanitysilk.InsanitySilk
+api-version: 1.16
+commands:
+  desilk:
+    description: Remove silk-touch from your ultra pickaxe!
+  addsilk:
+    description: Add silk-touch to your ultra pickaxe!
