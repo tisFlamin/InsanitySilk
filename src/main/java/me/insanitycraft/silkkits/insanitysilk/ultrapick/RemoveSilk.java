@@ -16,7 +16,6 @@ import sun.security.krb5.Config;
 import java.lang.reflect.Array;
 
 public class RemoveSilk implements CommandExecutor {
-    Plugin plugin = InsanitySilk.getPlugin(InsanitySilk.class);
 
 
     @Override

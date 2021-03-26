@@ -26,4 +26,5 @@ public final class InsanitySilk extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
     }
+
 }

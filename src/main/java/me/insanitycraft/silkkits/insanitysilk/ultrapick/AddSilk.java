@@ -15,7 +15,6 @@ import java.lang.reflect.Array;
 import java.util.List;
 
 public class AddSilk implements CommandExecutor {
-    Plugin plugin = InsanitySilk.getPlugin(InsanitySilk.class);
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
