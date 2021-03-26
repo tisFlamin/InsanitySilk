@@ -23,13 +23,14 @@ public class AddSilk implements CommandExecutor {
         ItemStack hand = player.getItemInHand();
         if (String.valueOf(hand).contains("Netherite Ultra Pick")){
             if(String.valueOf(player.getItemInHand().getItemMeta().getDisplayName()).contains("Netherite Ultra Pick")){
-                player.sendMessage(prefix + ChatColor.RED + "" + ChatColor.BOLD + "You must re-name your Ultra Pickaxe to something else!");
+                player.sendMessage(prefix + "" + ChatColor.RED + "" + ChatColor.BOLD + " You must re-name your Ultra Pickaxe to something else!");
             }else{
                 player.getItemInHand().addUnsafeEnchantment(Enchantment.SILK_TOUCH, 1);
                 hand.removeEnchantment(Enchantment.LOOT_BONUS_BLOCKS);
+                player.sendMessage(ChatColor.AQUA + "" + ChatColor.BOLD + "InsanitySilk" + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " »" + "" + ChatColor.GREEN + "" + ChatColor.BOLD + "Added silk touch successfully!");
             }
-        }else if(player.getItemInHand().equals(Material.AIR)){
-            player.sendMessage(prefix + ChatColor.RED + "" + ChatColor.BOLD + "You must have an ultra pickaxe in your hand for this command!");
+        }else if(!player.getItemInHand().equals(Material.NETHERITE_PICKAXE)){
+            player.sendMessage(prefix + "" + ChatColor.RED + "" + ChatColor.BOLD + " You must have an ultra pickaxe in your hand for this command!");
         }else{
             return true;
         }
